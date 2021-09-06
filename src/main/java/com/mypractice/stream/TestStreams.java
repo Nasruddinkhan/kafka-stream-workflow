@@ -5,13 +5,13 @@ import org.springframework.cloud.stream.annotation.Output;
 import org.springframework.messaging.MessageChannel;
 import org.springframework.messaging.SubscribableChannel;
 
-public interface LoansStreams {
-    String INPUT = "loans-in";
-    String OUTPUT = "loans-out";
+public interface TestStreams {
+    String INPUT = "payload-in";
+    String OUTPUT = "payload-out";
 
     @Input(INPUT)
-    SubscribableChannel inboundLoans();
+    SubscribableChannel inboundTopic();
 
     @Output(OUTPUT)
-    MessageChannel outboundLoans();
+    MessageChannel outboundTopic();
 }

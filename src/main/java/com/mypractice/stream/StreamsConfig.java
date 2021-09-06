@@ -2,6 +2,6 @@ package com.mypractice.stream;
 
 import org.springframework.cloud.stream.annotation.EnableBinding;
 
-@EnableBinding(LoansStreams.class)
+@EnableBinding(TestStreams.class)
 public class StreamsConfig {
 }

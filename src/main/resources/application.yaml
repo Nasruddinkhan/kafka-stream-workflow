@@ -1,5 +1,5 @@
 server:
-  port: 8808
+  port: 8999
 spring:
   cloud:
     stream:
@@ -7,9 +7,9 @@ spring:
         binder:
           brokers: localhost:9092
       bindings:
-        loans-in:
-          destination: loans
+        payload-in:
+          destination: input-payload-topic
           contentType: application/json
-        loans-out:
-          destination: loans-out
+        payload-out:
+          destination: output-payload-topic
           contentType: application/json

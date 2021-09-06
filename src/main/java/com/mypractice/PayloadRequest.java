@@ -1,16 +1,15 @@
 package com.mypractice;
 
 
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 
 @Getter
 @Setter
 @ToString
 @Builder
-public class Loans {
+@AllArgsConstructor
+@NoArgsConstructor
+public class PayloadRequest {
     private long timestamp;
     private String result;
 }
